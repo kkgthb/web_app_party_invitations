@@ -2,5 +2,10 @@
 .ignoreme
 .vscode
 
+# Ignore .env files
+.env
+.env.*
+
 # I think I'll probably end up using a Node-based library for at least the frontend, so ...
 node_modules
+.astro
