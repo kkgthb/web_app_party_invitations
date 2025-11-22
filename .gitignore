@@ -11,3 +11,4 @@ node_modules
 .astro
 test-results
 e2e_test_results
+dist
