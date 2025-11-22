@@ -6,6 +6,8 @@
 .env
 .env.*
 
-# I think I'll probably end up using a Node-based library for at least the frontend, so ...
+# Language cruft
 node_modules
 .astro
+test-results
+e2e_test_results
