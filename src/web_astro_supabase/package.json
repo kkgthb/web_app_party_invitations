@@ -21,6 +21,7 @@
   "devDependencies": {
     "@astrojs/node": "^9.5.1",
     "@playwright/test": "^1.56.1",
+    "@supabase/ssr": "^0.7.0",
     "@types/node": "^24.10.1",
     "cross-env": "^10.1.0",
     "playwright-ctrf-json-reporter": "^0.0.26",
