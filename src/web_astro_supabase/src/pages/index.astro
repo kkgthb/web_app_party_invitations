@@ -1,7 +1,20 @@
 ---
 import MyDefaultLayout from "../layouts/MyDefaultLayout.astro";
+const publicHello =
+  import.meta.env.PUBLIC_HELLO ||
+  "No environment variable found. Did you create a .env file?";
+const showServerEnvironmentVariable =
+  Astro.url.searchParams.has("showPublicEnvHello");
 ---
 
 <MyDefaultLayout title="Home">
   <div>Hello world!</div>
+  {
+    showServerEnvironmentVariable && (
+      <div>
+        <p id="server-label">Non-static-mode-only content:</p>
+        <pre id="server-value">{publicHello}</pre>
+      </div>
+    )
+  }
 </MyDefaultLayout>

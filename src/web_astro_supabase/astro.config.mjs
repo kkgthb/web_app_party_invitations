@@ -1,7 +1,10 @@
 /// <reference types="astro/client" />
 import { defineConfig } from "astro/config";
-import { loadEnv } from "vite";
+import node from "@astrojs/node";
 
-const { PUBLIC_HELLO } = loadEnv(process.env.NODE_ENV, process.cwd(), "");
-
-export default defineConfig({});
+export default defineConfig({
+  adapter: node({
+    mode: "standalone"
+  }),
+  output: "server",
+});

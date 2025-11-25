@@ -12,3 +12,6 @@ node_modules
 test-results
 e2e_test_results
 dist
+
+# Local Netlify folder
+.netlify
