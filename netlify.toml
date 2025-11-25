@@ -1,5 +1,0 @@
-[build]
-  base = "src/web_astro_supabase"
-  command = "cd src/web_astro_supabase && npm install && npm run build"
-  publish = "src/web_astro_supabase/dist"
-  functions = "src/web_astro_supabase/netlify/functions"
