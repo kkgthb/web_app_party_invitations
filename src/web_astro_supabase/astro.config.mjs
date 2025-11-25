@@ -1,10 +1,8 @@
 /// <reference types="astro/client" />
 import { defineConfig } from "astro/config";
-import node from "@astrojs/node";
+import vercelServerless from '@astrojs/vercel/serverless';
 
 export default defineConfig({
-  adapter: node({
-    mode: "standalone"
-  }),
+  adapter: vercelServerless(),
   output: "server",
 });
